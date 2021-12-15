@@ -9,6 +9,12 @@ RUN apt-get install -y vim less
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 
+# Update the system
+RUN apt-get install -y build-essential openssl htop git make cmake gfortran g++
+
+# LAPACK/BLAS
+RUN apt-get install -y libfreetype6-dev libatlas-base-dev liblapack-dev
+
 # Install packages
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
