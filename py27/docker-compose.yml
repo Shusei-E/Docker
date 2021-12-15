@@ -1,0 +1,10 @@
+version: '3'
+services:
+  python27:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: py27
+    volumes:
+      - "~/:/myfile"
+    tty: true
