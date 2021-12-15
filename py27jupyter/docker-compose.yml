@@ -5,6 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: py27jupyter
+    platform: linux/amd64
     volumes:
       - "~:/src/notebooks/myfile"
     ports:
