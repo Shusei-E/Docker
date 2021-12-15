@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     container_name: py27jupyter
     volumes:
-      - "~/Desktop:/src/notebooks/myfile"
+      - "~:/src/notebooks/myfile"
     ports:
       - "8888:8888"
     tty: true
