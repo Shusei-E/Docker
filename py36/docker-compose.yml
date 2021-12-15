@@ -5,6 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: py36
+    platform: linux/amd64
     volumes:
       - "~/:/myfile"
     tty: true

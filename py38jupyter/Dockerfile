@@ -1,6 +1,6 @@
-# Python 3.6.9
+# Python 3.8.5
 
-FROM python:3.6.9-buster
+FROM python:3.8.5-buster
 USER root
 
 RUN apt-get update
