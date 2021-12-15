@@ -1,10 +1,10 @@
 version: '3'
 services:
-  py27note:
+  py38note:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: py27jupyter
+    container_name: py38jupyter
     platform: linux/amd64
     volumes:
       - "~:/src/notebooks/myfile"
