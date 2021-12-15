@@ -1,0 +1,10 @@
+version: '3'
+services:
+  python36:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: py36
+    volumes:
+      - "~/:/myfile"
+    tty: true
