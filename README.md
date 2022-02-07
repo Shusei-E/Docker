@@ -31,6 +31,12 @@ $ docker-compose exec python27 bash  # `python27` is the service name in `.yml`
 
 # Access my file (under my setting)
 $ cd myfile
+
+# Exit the environment
+$ exit
+
+# Delete container
+$ docker-compose stop <service-name>  # `python27` in this example
 ```
 
 ## Python
