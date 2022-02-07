@@ -22,6 +22,7 @@ $ docker image ls  # a list of available images
 $ docker container ls  # running container
 
 # If nothing shows up, go to the folder with `Dockerfile`
+$ cd ~/Docker/py27
 $ docker compose up -d --build  # make image -> launch container
 $ docker compose up -d          # if the iamge is already built
 
