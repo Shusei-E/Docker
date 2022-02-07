@@ -12,6 +12,23 @@ $ docker-compose ps
 $ docker-compose stop <service-name>
 ```
 
+## Use docker
+[Link](https://qiita.com/jhorikawa_err/items/fb9c03c0982c29c5b6d5)  
+
+Open Docker Desktop first.
+```
+$ docker image ls  # a list of available images
+
+$ docker container ls  # running container
+
+# If nothing shows up, go to the folder with `Dockerfile`
+$ docker compose up -d --build  # make image -> launch container
+$ docker compose up -d          # if the iamge is already built
+
+# After you make sure the container is running
+$ docker-compose exec python27 bash  # `python27` is the service name in `.yml`
+```
+
 ## Python
 
 Get packages info:
