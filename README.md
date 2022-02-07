@@ -28,6 +28,9 @@ $ docker compose up -d          # if the iamge is already built
 
 # After you make sure the container is running
 $ docker-compose exec python27 bash  # `python27` is the service name in `.yml`
+
+# Access my file (under my setting)
+$ cd myfile
 ```
 
 ## Python
